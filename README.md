@@ -49,4 +49,5 @@ TODO
        instead of using a Utils class that is extended by the tests,
        I will try to implement "Defender Methods" in a utility
        interface that is implemented by the tests.
+    2. Add class annotations for strict type checks with Groovy.
        
