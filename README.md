@@ -1,3 +1,7 @@
+Using with BrowserStack
+======================
+To use with BrowserStack, please change browserstack.username and browserstack.key values in bundle.gradle
+
 selenium2-groovy
 ===============
 [http://djangofan.github.io/selenium2-groovy/](http://djangofan.github.io/selenium2-groovy/)
