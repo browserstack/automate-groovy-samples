@@ -1,5 +1,6 @@
-Using with BrowserStack
-======================
+automate-groovy-samples
+=======================
+#### Using with BrowserStack
 To use with BrowserStack, please change browserstack.username and browserstack.key values in bundle.gradle
 
 selenium2-groovy
@@ -55,3 +56,5 @@ TODO
        interface that is implemented by the tests.
     2. Add class annotations for strict type checks with Groovy.
        
+=======
+
