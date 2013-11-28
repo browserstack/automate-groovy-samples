@@ -57,14 +57,15 @@ tasks.withType(Test) {
 		logger.lifecycle("Running test: " + descriptor)
 	}   
 	// System properties used by tests
-	systemProperties['hub.ip'] = '127.0.0.1'
-	systemProperties['hub.port'] = '4444'
+	systemProperties['hub.ip'] = 'hub.browserstack.com'
+	systemProperties['hub.port'] = '80'
 	systemProperties['start.url'] = 'http://www.bing.com/maps/'
 	systemProperties['login.username'] = 'myuser'
 	systemProperties['login.password'] = 'password'
 	systemProperties['webdriver.chrome.driver'] = 'chromedriver.exe'
 	systemProperties['set.native.events'] = true
-	
+	systemProperties['browserstack.username'] = '<BROWSERSTACK_USERNAME>'
+  systemProperties['browserstack.key'] = '<BROWSERSTACK_KEY>'
 	// initial browser size and position
 	systemProperties['windowXPosition'] = '100'
 	systemProperties['windowYPosition'] = '40'

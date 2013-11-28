@@ -7,19 +7,19 @@
             "javascriptEnabled": true,
             "takesScreenshot": false,
             "firefox_profile": "",
-            "browser-version": "19.0",  
-            "platform": "WINDOWS",                     
+            "browser-version": "25.0",  
+            "platform": "MAC",                     
             "maxInstances": 5
         },
         {
             "browserName": "chrome",
             "maxInstances": 5,
-            "platform": "WINDOWS"
+            "platform": "MAC"
         },
         {
-            "browserName": "internetExplorer",
+            "browserName": "chrome",
             "maxInstances": 1,
-            "platform": "WINDOWS"
+            "platform": "MAC"
         }
     ],
     "configuration":
@@ -30,8 +30,8 @@
         "proxy": "org.openqa.grid.selenium.proxy.WebDriverRemoteProxy",
         "port": 5555,
         "host": ip,
-        "register": true,
-        "hubPort": 4444,
+				"register": true,
+        "hubPort": 80,
         "maxSessions": 5
     }
 }

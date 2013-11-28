@@ -100,14 +100,14 @@ abstract class WebDriverUtils extends Utils {
 		return we
 	}
 	
-	public void initializeRemoteBrowser( String type, String ip, int port ) {
+	public void initializeRemoteBrowser( String type, String ip, int port, String username, String key) {
 		DesiredCapabilities dc = new DesiredCapabilities()
 		dc.setCapability( "takesScreenshot", false )
 		dc.setCapability( "webdriver.remote.quietExceptions", true )
 		try {
 			if ( type.equalsIgnoreCase( "firefox" ) ) {
 				dc.setBrowserName( "firefox" )
-				setDriver( new RemoteWebDriver( new URL("http://" + ip + ":" + port + "/wd/hub"), dc ) )
+				setDriver( new RemoteWebDriver( new URL("http://"+username+":" + key + "@" + ip + ":" + port + "/wd/hub"), dc ) )
 			} else if ( type.equalsIgnoreCase( "internetExplorer" ) ) {
 				dc.setBrowserName( "internet explorer" )
 				setDriver( new RemoteWebDriver( new URL("http://" + ip + ":" + port + "/wd/hub"), dc ) )
